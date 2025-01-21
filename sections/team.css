@@ -1,0 +1,27 @@
+.team-section {
+    background: #f8f9fa;
+    padding: 6rem 2rem;
+}
+
+.team-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 4rem;
+}
+
+.team-category {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.team-category.visible {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+} 

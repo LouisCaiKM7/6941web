@@ -1,0 +1,42 @@
+.events-section {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    color: white;
+    padding: 6rem 2rem;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.calendar {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.event-list {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.event-item {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    transform: translateX(50px);
+    opacity: 0;
+    animation: slideInRight 0.5s ease forwards;
+}
+
+@keyframes slideInRight {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} 

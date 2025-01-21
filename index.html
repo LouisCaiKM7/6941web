@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRC Team 6941</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="team-logo.png" alt="Team 6941 Logo" class="nav-logo">
+            <span>Team 6941</span>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home-section" aria-label="Home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about-section" aria-label="About Us"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#robots-section" aria-label="Our Robots"><i class="fas fa-robot"></i> Robots</a></li>
+            <li><a href="#team-section" aria-label="Our Team"><i class="fas fa-users"></i> Team</a></li>
+            <li><a href="#events-section" aria-label="Events Calendar"><i class="fas fa-calendar"></i> Events</a></li>
+            <li><a href="#resources-section" aria-label="Team Resources"><i class="fas fa-book"></i> Resources</a></li>
+            <li><a href="#news-section" aria-label="News and Updates"><i class="fas fa-newspaper"></i> News</a></li>
+            <li><a href="#sponsor-section" aria-label="Sponsor Us"><i class="fas fa-handshake"></i> Sponsor</a></li>
+            <li><a href="#contact-section" aria-label="Contact Us"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home-section" class="hero">
+        <h1>Welcome to FRC Team 6941</h1>
+        <p>Building Tomorrow's Engineers Today</p>
+    </section>
+
+    <section id="about-section" class="content-section">
+        <h2>About Us</h2>
+        <div class="section-grid">
+            <div>
+                <h3>Our History</h3>
+                <p>Founded in [Year], Team 6941 has been dedicated to fostering innovation and engineering excellence. Our journey began with a group of passionate students and mentors who shared a vision of creating competitive robots while building valuable STEM skills.</p>
+            </div>
+            <div>
+                <h3>Mission Statement</h3>
+                <p>To inspire and empower the next generation of innovators through robotics, promoting STEM education, teamwork, and gracious professionalism in our community.</p>
+            </div>
+        </div>
+        <div class="team-photos">
+            <img src="team_logo.jpg" alt="Team 6941" class="team-photo">
+        </div>
+    </section>
+
+    <section id="robots-section" class="content-section">
+        <h2>Our Robots</h2>
+        <div class="section-grid">
+            <div class="robot-card">
+                <img src="2024_robot.png" alt="2024 Robot">
+                <h3>2024 Robot</h3>
+                <h4>Specifications:</h4>
+                <ul>
+                    <li>Weight: [Weight] lbs</li>
+                    <li>Dimensions: [Dimensions]</li>
+                    <li>Key Features: [Features]</li>
+                </ul>
+            </div>
+            <!-- Add more robot cards for previous years -->
+        </div>
+    </section>
+
+    <section id="events-section" class="content-section">
+        <h2>Team Calendar</h2>
+        <div class="calendar-container">
+            <div id="tba-calendar">
+                <!-- TBA Calendar will be loaded here -->
+            </div>
+            <div class="upcoming-events">
+                <h3>Upcoming Events</h3>
+                <div id="events-list"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources-section" class="content-section">
+        <h2>Team Resources</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>Team Documents</h3>
+                <ul>
+                    <li><a href="#">Team Handbook</a></li>
+                    <li><a href="#">Safety Guidelines</a></li>
+                    <li><a href="#">Build Season Schedule</a></li>
+                    <li><a href="#">Training Materials</a></li>
+                </ul>
+            </div>
+            <div class="resource-card">
+                <h3>Technical Resources</h3>
+                <ul>
+                    <li><a href="#">CAD Files</a></li>
+                    <li><a href="#">Programming Guide</a></li>
+                    <li><a href="#">Mechanical Guide</a></li>
+                    <li><a href="#">Electrical Guide</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section" class="content-section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>School Address</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>team6941@email.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (XXX) XXX-XXXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors" class="content-section">
+        <h2>Our Sponsors</h2>
+        <p>We are grateful for the support of our sponsors who make our journey possible.</p>
+        <div class="sponsor-grid">
+            <!-- Add sponsor logos/names here -->
+            <div class="sponsor-card">
+                <img src="sponsor1-logo.png" alt="Sponsor 1">
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsor-us" class="content-section">
+        <h2>Become a Sponsor</h2>
+        <div class="sponsor-us-container">
+            <div class="sponsor-intro">
+                <h3>Why Sponsor Team 6941?</h3>
+                <p>Your support helps us inspire the next generation of engineers, scientists, and innovators. By sponsoring our team, you're investing in STEM education and the future of technology.</p>
+                
+                <div class="sponsor-benefits">
+                    <h3>Sponsorship Benefits</h3>
+                    <div class="tier-grid">
+                        <div class="tier-card platinum">
+                            <h4>Platinum Sponsor</h4>
+                            <p class="tier-amount">$5,000+</p>
+                            <ul>
+                                <li>Large logo on robot</li>
+                                <li>Large logo on team uniforms</li>
+                                <li>Featured on team website</li>
+                                <li>Social media recognition</li>
+                                <li>Team demonstration at sponsor site</li>
+                                <li>VIP invitations to competitions</li>
+                            </ul>
+                        </div>
+                        <div class="tier-card gold">
+                            <h4>Gold Sponsor</h4>
+                            <p class="tier-amount">$2,500+</p>
+                            <ul>
+                                <li>Medium logo on robot</li>
+                                <li>Medium logo on team uniforms</li>
+                                <li>Featured on team website</li>
+                                <li>Social media recognition</li>
+                                <li>Team demonstration at sponsor site</li>
+                            </ul>
+                        </div>
+                        <div class="tier-card silver">
+                            <h4>Silver Sponsor</h4>
+                            <p class="tier-amount">$1,000+</p>
+                            <ul>
+                                <li>Small logo on robot</li>
+                                <li>Small logo on team uniforms</li>
+                                <li>Listed on team website</li>
+                                <li>Social media recognition</li>
+                            </ul>
+                        </div>
+                        <div class="tier-card bronze">
+                            <h4>Bronze Sponsor</h4>
+                            <p class="tier-amount">$500+</p>
+                            <ul>
+                                <li>Listed on team website</li>
+                                <li>Social media recognition</li>
+                                <li>Team thank you letter</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sponsor-contact">
+                <h3>Interested in Sponsoring?</h3>
+                <form id="sponsor-inquiry-form" class="sponsor-form">
+                    <div class="form-group">
+                        <input type="text" id="company-name" placeholder="Company Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contact-name" placeholder="Contact Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contact-email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="contact-phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select id="sponsorship-level" required>
+                            <option value="">Select Sponsorship Level</option>
+                            <option value="platinum">Platinum Sponsor ($5,000+)</option>
+                            <option value="gold">Gold Sponsor ($2,500+)</option>
+                            <option value="silver">Silver Sponsor ($1,000+)</option>
+                            <option value="bronze">Bronze Sponsor ($500+)</option>
+                            <option value="custom">Custom Amount</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Additional Message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="payment-methods">
+            <h3>Payment Methods</h3>
+            <div class="payment-options">
+                <div class="payment-card" tabindex="0">
+                    <h4>Direct Bank Transfer</h4>
+                    <div class="payment-details">
+                        <p>Bank: [Bank Name]</p>
+                        <p>Account Name: Team 6941 Robotics</p>
+                        <p>Account Number: XXXX-XXXX-XXXX</p>
+                        <p>Routing Number: XXXXXXXXX</p>
+                        <button class="copy-btn" aria-label="Copy bank details">
+                            <i class="fas fa-copy"></i> Copy Details
+                        </button>
+                    </div>
+                </div>
+
+                <div class="payment-card" tabindex="0">
+                    <h4>Credit Card Payment</h4>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa" aria-label="Visa"></i>
+                        <i class="fab fa-cc-mastercard" aria-label="Mastercard"></i>
+                        <i class="fab fa-cc-amex" aria-label="American Express"></i>
+                    </div>
+                    <button class="payment-btn" aria-label="Pay with credit card">
+                        <i class="fas fa-credit-card"></i> Pay Securely
+                    </button>
+                </div>
+
+                <div class="payment-card" tabindex="0">
+                    <h4>PayPal</h4>
+                    <div class="payment-icons">
+                        <i class="fab fa-paypal" aria-label="PayPal"></i>
+                    </div>
+                    <button class="payment-btn paypal-btn" aria-label="Pay with PayPal">
+                        <i class="fab fa-paypal"></i> Pay with PayPal
+                    </button>
+                </div>
+
+                <div class="payment-card" tabindex="0">
+                    <h4>Check</h4>
+                    <div class="payment-details">
+                        <p>Make checks payable to:</p>
+                        <p>Team 6941 Robotics</p>
+                        <p>Mailing Address:</p>
+                        <p>[Your School/Organization Address]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social-media" class="content-section">
+        <h2>Connect With Us</h2>
+        <div class="social-grid">
+            <a href="https://youtube.com/@your-team" class="social-card youtube">
+                <i class="fab fa-youtube"></i>
+                <h3>YouTube</h3>
+                <div class="social-feed" id="youtube-feed">
+                    <!-- YouTube feed will be loaded here -->
+                </div>
+            </a>
+            <a href="https://instagram.com/your-team" class="social-card instagram">
+                <i class="fab fa-instagram"></i>
+                <h3>Instagram</h3>
+                <div class="social-feed" id="instagram-feed">
+                    <!-- Instagram feed will be loaded here -->
+                </div>
+            </a>
+            <a href="https://x.com/your-team" class="social-card twitter">
+                <i class="fab fa-x-twitter"></i>
+                <h3>X (Twitter)</h3>
+                <div class="social-feed" id="twitter-feed">
+                    <!-- Twitter feed will be loaded here -->
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="recruitment" class="content-section">
+        <h2>Join Our Team</h2>
+        <div class="recruitment-content">
+            <div class="recruitment-info">
+                <h3>Why Join Us?</h3>
+                <ul>
+                    <li>Learn real-world engineering skills</li>
+                    <li>Work with professional mentors</li>
+                    <li>Compete in exciting robotics competitions</li>
+                    <li>Build lasting friendships</li>
+                </ul>
+            </div>
+            <div class="application-form">
+                <h3>Interest Form</h3>
+                <form id="recruitment-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <select required>
+                        <option value="">Select your grade</option>
+                        <option value="9">Grade 9</option>
+                        <option value="10">Grade 10</option>
+                        <option value="11">Grade 11</option>
+                        <option value="12">Grade 12</option>
+                    </select>
+                    <textarea placeholder="Why do you want to join our team?"></textarea>
+                    <button type="submit">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="content-section">
+        <h2>News & Updates</h2>
+        <div class="news-grid" id="news-container">
+            <!-- News items will be dynamically loaded -->
+        </div>
+        <button id="load-more-news" class="load-more-btn">Load More News</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FRC Team 6941. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
